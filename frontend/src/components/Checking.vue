@@ -13,9 +13,9 @@
       </h1>
       <h4>กรุณากรอกข้อมูล</h4>
       <h2>หมายเลขบัตร/Document No.</h2>
-      <v-text-field solo></v-text-field>
+      <v-text-field solo placeholder="หมายเลขบัตร"></v-text-field>
       <h2>หมายเลขโทรศัพท์/Mobile No.</h2>
-      <v-text-field solo></v-text-field>
+      <v-text-field solo placeholder="หมายเลขโทรศัพท์มือถือ"></v-text-field>
       <v-btn medium color="primary" dark> ค้นหา </v-btn>
     </div>
   </div>
