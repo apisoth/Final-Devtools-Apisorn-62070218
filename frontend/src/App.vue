@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <RegisterVaccine></RegisterVaccine>
+    <!-- <RegisterVaccine></RegisterVaccine> -->
     <checking></checking>
   </div>
 </template>
 
 <script>
 import axios from "axios";
-import RegisterVaccine from './components/RegisterVaccine.vue';
+// import RegisterVaccine from './components/RegisterVaccine.vue';
 import Checking from './components/Checking.vue';
 export default {
   components: {
-    RegisterVaccine,
+    // RegisterVaccine,
     Checking
   },
   data() {
