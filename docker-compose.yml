@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  db:
+    build: ./database
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: test
+    ports:
+      - "33061:3306"
+    restart: always
+  # backend:
+  #   build: ./backend
+  #   environment:
+  #     MYSQL_DATABASE: test
+  #     MYSQL_USER: root
+  #     MYSQL_PASSWORD: password
+  #     MYSQL_HOST: db
+  #   ports:
+  #     - "5000:5000"
+  #   depends_on:
+  #     - db
+  #   restart: on-failure
+  # frontend:
+  #   build: ./frontend
+  #   ports:
+  #     - "80:80"
+  #   restart: on-failure
