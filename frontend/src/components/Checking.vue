@@ -27,6 +27,9 @@
         ></v-text-field>
         <v-btn medium color="primary" dark type="submit"> ค้นหา </v-btn>
       </form>
+      <div v-if="appoint_date">
+      adsad
+      </div>
     </div>
   </div>
 </template>
@@ -37,6 +40,7 @@ export default {
     return {
       id_no: "",
       phone_number: "",
+      appoint_date: null
     };
   },
   methods: {
@@ -48,6 +52,9 @@ export default {
       };
       axios.post("http://localhost:5000/check", data).then((response) => {
         console.log(response);
+        if (response.data) {
+            this.appoint_date = response.data.data.appoint_date 
+        }
       });
     },
   },
